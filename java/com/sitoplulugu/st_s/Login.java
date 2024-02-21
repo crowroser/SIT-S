@@ -1,5 +1,6 @@
 package com.sitoplulugu.st_s;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -65,7 +66,10 @@ public class Login extends AppCompatActivity {
                             Log.d("LoginActivity", "signInWithEmail:success");
                             Toast.makeText(Login.this, "Giriş başarılı.",
                                     Toast.LENGTH_SHORT).show();
-                            // Burada ana ekrana gitmek için bir Intent başlatılabilir
+                            // Başarılı giriş olduğunda MainActivity'e geçiş yap
+                            Intent intent = new Intent(Login.this, MainActivity.class);
+                            startActivity(intent);
+                            finish(); // Bu aktiviteyi kapat
                         } else {
                             // Giriş başarısız ise hata mesajı göster
                             Log.w("LoginActivity", "signInWithEmail:failure", task.getException());
