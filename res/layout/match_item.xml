@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtTeam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Team 1"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtVs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/txtTeam1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="vs"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTeam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/txtVs"
+        android:layout_marginEnd="16dp"
+        android:text="Team 2"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTeam1"
+        android:layout_alignStart="@id/txtTeam1"
+        android:text="Event"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEvent"
+        android:layout_alignStart="@id/txtEvent"
+        android:text="Status"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/txtTournament"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtStatus"
+        android:layout_alignStart="@id/txtStatus"
+        android:text="Tournament"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/txtIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTournament"
+        android:layout_alignStart="@id/txtTournament"
+        android:text="In:"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+
+</RelativeLayout>
