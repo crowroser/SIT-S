@@ -19,6 +19,12 @@ public class SignUp extends AppCompatActivity {
     private EditText emailEditText, passwordEditText;
     private Button signUpButton;
     private FirebaseAuth mAuth;
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        // Geri tuşuna basıldığında önceki aktiviteye dön
+        finish();
+    }
 
     @SuppressLint("MissingInflatedId")
     @Override

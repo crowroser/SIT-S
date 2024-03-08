@@ -24,6 +24,12 @@ public class Login extends AppCompatActivity {
     private Button buttonLogin;
     private Button signIn;
     private FirebaseAuth mAuth;
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        // Geri tuşuna basıldığında önceki aktiviteye dön
+        finish();
+    }
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -78,7 +84,7 @@ public class Login extends AppCompatActivity {
                             Toast.makeText(Login.this, "Giriş başarılı.",
                                     Toast.LENGTH_SHORT).show();
                             // Başarılı giriş olduğunda MainActivity'e geçiş yap
-                            Intent intent = new Intent(Login.this, MainActivity.class);
+                            Intent intent = new Intent(Login.this, HomePage.class);
                             startActivity(intent);
                             finish(); // Bu aktiviteyi kapat
                         } else {

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="games_array">
+        <item>Valorant</item>
+        <item>League of Legends (LoL)</item>
+        <item>Counter-Strike: Global Offensive (CS:GO)</item>
+    </string-array>
+
+</resources>
